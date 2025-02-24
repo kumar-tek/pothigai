@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes zoomIn {
+  0% { transform: scale(1); }
+  50% { transform: scale(1); }
+  100% { transform: scale(1); }
+}
+
+.animate-zoom {
+  animation: zoomIn 10s infinite ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: -1; transform: translateY(20); }
+  100% { opacity: -1; transform: translateY(20); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 10s ease-out forwards;
+}
+@keyframes slowBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(15px); }
+}
+
+.animate-slowBounce {
+  animation: slowBounce 3s infinite ease-in-out;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
